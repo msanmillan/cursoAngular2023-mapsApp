@@ -11,6 +11,10 @@ import { PropertiesPageComponent } from './pages/properties-page/properties-page
 import { ZoomRangePageComponent } from './pages/zoom-range-page/zoom-range-page.component';
 
 
+import * as mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
+(mapboxgl as any).accessToken  ='pk.eyJ1IjoibXNhbm1pbGxhbiIsImEiOiJjbGRza2hnaGkwb29oM25rZzBhenV2eWl5In0.C7btNoW-u5eU9w2HOEWyNw';
+
+
 @NgModule({
   declarations: [
     MiniMapComponent,
